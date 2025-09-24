@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Etiqueta &lt;audio&gt; en HTML</title>
+</head>
+<body>
+  <h1>Etiqueta &lt;audio&gt; en HTML</h1>
+
+  <p>La etiqueta <code>&lt;audio&gt;</code> permite incrustar contenido de audio en una página web. Es compatible con formatos como MP3, WAV y OGG.</p>
+
+  <h2>Componentes principales:</h2>
+  <ul>
+    <li><strong>&lt;audio&gt;:</strong> Etiqueta contenedora del reproductor de audio.</li>
+    <li><strong>src:</strong> Atributo que indica la ruta del archivo de audio.</li>
+    <li><strong>controls:</strong> Atributo que muestra los controles de reproducción (play, pausa, volumen, etc.).</li>
+    <li><strong>autoplay:</strong> Reproduce el audio automáticamente al cargar la página (opcional).</li>
+    <li><strong>loop:</strong> Reproduce el audio en bucle (opcional).</li>
+    <li><strong>preload:</strong> Indica si el archivo debe cargarse al cargar la página. Valores: <code>auto</code>, <code>metadata</code>, <code>none</code>.</li>
+    <li><strong>&lt;source&gt;:</strong> Permite incluir múltiples formatos para compatibilidad entre navegadores.</li>
+  </ul>
+
+  <h2>Ejemplo básico:</h2>
+  <p>Este ejemplo muestra cómo insertar un archivo de audio con controles:</p>
+
+  <pre>
+&lt;audio src="cancion.mp3" controls&gt;
+  Tu navegador no soporta el elemento de audio.
+&lt;/audio&gt;
+  </pre>
+
+  <h2>Ejemplo con múltiples fuentes:</h2>
+  <p>Ideal para asegurar compatibilidad con distintos navegadores:</p>
+
+  <pre>
+&lt;audio controls preload="auto"&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  &lt;source src="audio.ogg" type="audio/ogg"&gt;
+  Tu navegador no soporta el elemento de audio.
+&lt;/audio&gt;
+  </pre>
+
+  <h2>Resultado:</h2>
+  <audio controls preload="auto">
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+ <BR><a href="01.html">Volver al inicio</a></BR>
+
+</body>
+</html>

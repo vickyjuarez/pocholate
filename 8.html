@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Componentes de Formularios en HTML</title>
+</head>
+<body>
+  <h1>Componentes de Formularios en HTML</h1>
+
+  <p>Un formulario HTML permite recopilar datos del usuario. A continuación se explican todas las etiquetas que pueden formar parte de un formulario:</p>
+
+  <h2>1. &lt;form&gt;</h2>
+  <p>Contenedor principal del formulario. Atributos comunes:</p>
+  <ul>
+    <li><code>action</code>: URL a la que se envían los datos</li>
+    <li><code>method</code>: método de envío (<code>get</code> o <code>post</code>)</li>
+  </ul>
+
+  <h2>2. &lt;label&gt;</h2>
+  <p>Etiqueta descriptiva para un campo. Se asocia con el atributo <code>for</code>.</p>
+
+  <h2>3. &lt;input&gt;</h2>
+  <p>Campo de entrada. Tipos más comunes:</p>
+  <ul>
+    <li><code>text</code>: texto corto</li>
+    <li><code>password</code>: contraseña</li>
+    <li><code>email</code>: correo electrónico</li>
+    <li><code>number</code>: números</li>
+    <li><code>date</code>: fecha</li>
+    <li><code>checkbox</code>: casilla de verificación</li>
+    <li><code>radio</code>: botón de opción</li>
+    <li><code>file</code>: subir archivo</li>
+    <li><code>submit</code>: enviar formulario</li>
+    <li><code>reset</code>: limpiar formulario</li>
+    <li><code>button</code>: botón personalizado</li>
+    <li><code>hidden</code>: campo oculto</li>
+    <li><code>range</code>: selector de rango</li>
+    <li><code>color</code>: selector de color</li>
+    <li><code>tel</code>: número telefónico</li>
+    <li><code>url</code>: dirección web</li>
+    <li><code>search</code>: campo de búsqueda</li>
+  </ul>
+
+  <h2>4. &lt;textarea&gt;</h2>
+  <p>Área de texto para entradas largas. Atributos: <code>rows</code>, <code>cols</code>.</p>
+
+  <h2>5. &lt;select&gt; y &lt;option&gt;</h2>
+  <p>Menú desplegable con opciones. Se puede usar <code>multiple</code> para seleccionar más de una opción.</p>
+
+  <h2>6. &lt;optgroup&gt;</h2>
+  <p>Agrupa opciones dentro de un &lt;select&gt;.</p>
+
+  <h2>7. &lt;fieldset&gt; y &lt;legend&gt;</h2>
+  <p>Organiza campos en grupos. <code>&lt;legend&gt;</code> proporciona un título al grupo.</p>
+
+  <h2>8. &lt;button&gt;</h2>
+  <p>Botón que puede tener distintos comportamientos según el atributo <code>type</code>.</p>
+
+  <hr>
+
+  <h2>🧪 Ejemplo completo de formulario</h2>
+
+  <form action="/procesar" method="post">
+    <fieldset>
+      <legend>Información personal</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha"><br><br>
+
+      <label for="color">Color favorito:</label>
+      <input type="color" id="color" name="color"><br><br>
+
+      <label for="archivo">Subir archivo:</label>
+      <input type="file" id="archivo" name="archivo"><br><br>
+
+      <label>Género:</label><br>
+      <input type="radio" id="femenino" name="genero" value="femenino">
+      <label for="femenino">Femenino</label>
+      <input type="radio" id="masculino" name="genero" value="masculino">
+      <label for="masculino">Masculino</label><br><br>
+
+      <label for="intereses">Intereses:</label><br>
+      <input type="checkbox" id="musica" name="intereses" value="musica">
+      <label for="musica">Música</label>
+      <input type="checkbox" id="deportes" name="intereses" value="deportes">
+      <label for="deportes">Deportes</label><br><br>
+
+      <label for="pais">País:</label>
+      <select id="pais" name="pais">
+        <optgroup label="Latinoamérica">
+          <option value="mexico">México</option>
+          <option value="argentina">Argentina</option>
+        </optgroup>
+        <optgroup label="Europa">
+          <option value="espana">España</option>
+          <option value="francia">Francia</option>
+        </optgroup>
+      </select><br><br>
+
+      <label for="comentarios">Comentarios:</label><br>
+      <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+      <input type="hidden" name="token" value="abc123">
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </fieldset>
+  </form>
+<BR><a href="01.html">Volver al inicio</a></BR>
+
+</body>
+</html>

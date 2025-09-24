@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Etiqueta &lt;video&gt; en HTML</title>
+</head>
+<body>
+  <h1>Etiqueta &lt;video&gt; en HTML</h1>
+
+  <p>La etiqueta <code>&lt;video&gt;</code> permite insertar contenido de video en una página web. Es compatible con formatos como MP4, WebM y OGG.</p>
+
+  <h2>Componentes principales:</h2>
+  <ul>
+    <li><strong>&lt;video&gt;:</strong> Contenedor del reproductor de video.</li>
+    <li><strong>src:</strong> Ruta del archivo de video (puede omitirse si se usan &lt;source&gt;).</li>
+    <li><strong>controls:</strong> Muestra los controles de reproducción (play, pausa, volumen, etc.).</li>
+    <li><strong>autoplay:</strong> Reproduce el video automáticamente al cargar la página.</li>
+    <li><strong>loop:</strong> Reproduce el video en bucle.</li>
+    <li><strong>muted:</strong> Inicia el video sin sonido.</li>
+    <li><strong>poster:</strong> Imagen que se muestra antes de reproducir el video.</li>
+    <li><strong>width / height:</strong> Define el tamaño del reproductor.</li>
+    <li><strong>&lt;source&gt;:</strong> Permite incluir múltiples formatos para compatibilidad entre navegadores.</li>
+  </ul>
+
+  <h2>Ejemplo básico:</h2>
+  <pre>
+&lt;video src="video.mp4" controls width="640" height="360"&gt;
+  Tu navegador no soporta el elemento de video.
+&lt;/video&gt;
+  </pre>
+
+  <h2>Ejemplo con múltiples fuentes y atributos:</h2>
+  <pre>
+&lt;video controls autoplay loop muted poster="imagen.jpg" width="640" height="360"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;
+  Tu navegador no soporta el elemento de video.
+&lt;/video&gt;
+  </pre>
+
+  <h2>Resultado:</h2>
+  <video controls autoplay loop muted poster="imagen.jpg" width="640" height="360">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    Tu navegador no soporta el elemento de video.
+  </video>
+ <BR><a href="01.html">Volver al inicio</a></BR>
+
+</body>
+</html>
