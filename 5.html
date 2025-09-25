@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    :root { --pastel-blue: #bfe3ff; --pastel-green: #c8f7dc; --pastel-blue-100: #e9f5ff; --pastel-green-100: #eafaf1; --text-dark: #0f2e3d; }
+    body { background: linear-gradient(180deg, var(--pastel-blue-100), var(--pastel-green-100)); color: var(--text-dark); min-height: 100vh; }
+    .navbar { background: linear-gradient(90deg, var(--pastel-blue), var(--pastel-green)); }
+    a { color: #0d6efd; }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="01.html">Sábana HTML</a>
+        </div>
+    </nav>
+    <main class="container py-4">
     <h2>Lista No Ordenada</h2>
-<p> Lista No Ordenada &lt;ul&gt;: Muestra elementos sin un orden particular, usando viñetas.</p>
-  <ul>
-    <li>Elemento uno</li>
-    <li>Elemento dos</li>
-    <li>Elemento tres</li>
+    <p> Lista No Ordenada &lt;ul&gt;: Muestra elementos sin un orden particular, usando viñetas.</p>
+  <ul class="list-group mb-3">
+    <li class="list-group-item">Elemento uno</li>
+    <li class="list-group-item">Elemento dos</li>
+    <li class="list-group-item">Elemento tres</li>
   </ul>
 
   <h2>Lista Ordenada</h2>
   <p>Lista Ordenada  &lt;ol&gt;: Presenta elementos en un orden específico, numerados automáticamente.</p>
-  <ol>
-    <li>Paso uno</li>
-    <li>Paso dos</li>
-    <li>Paso tres</li>
+  <ol class="list-group list-group-numbered mb-3">
+    <li class="list-group-item">Paso uno</li>
+    <li class="list-group-item">Paso dos</li>
+    <li class="list-group-item">Paso tres</li>
   </ol>
   <h2>Lista de definicion</h2>
   <p> Lista de definición  &lt;dl&gt;: Agrupa términos y sus respectivas descripciones.</p>
@@ -29,7 +42,8 @@
   <dt>CSS</dt>
   <dd>Lenguaje para diseñar el estilo de las páginas web.</dd>
 </dl>
-    <a href="01.html">Volver al inicio</a>
-    
+    <a href="01.html" target="_parent">Volver al inicio</a>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
